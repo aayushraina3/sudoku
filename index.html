@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="sudoku-board">
+        <!--row 1-->
+        <div class="board-row">
+            <div class="board-box">
+                <div class="board-box-row">
+                    <div class="board-cell"><input type="text" class="board-cell-input" id="0,0"></div>
+                    <div class="board-cell"><input type="text" class="board-cell-input" id="0,1"></div>
+                    <div class="board-cell"><input type="text" class="board-cell-input" id="0,2"></div>
+                </div>
+                <div class="board-box-row">
+                    <div class="board-cell"><input type="text" class="board-cell-input" id="1,0" value="6" disabled></div>
+                    <div class="board-cell"><input type="text" class="board-cell-input" id="1,1" value="8" disabled></div>
+                    <div class="board-cell"><input type="text" class="board-cell-input" id="1,2"></div>
+                </div>
+                <div class="board-box-row">
+                    <div class="board-cell"><input type="text" class="board-cell-input" id="2,0" value="1" disabled></div>
+                    <div class="board-cell"><input type="text" class="board-cell-input" id="2,1" value="9" disabled></div>
+                    <div class="board-cell"><input type="text" class="board-cell-input" id="2,2"></div>
+                </div>
+            </div>
+            <div class="board-box">
+                <div class="board-box-row">
+                    <div class="board-cell"><input type="text" class="board-cell-input" id="0,3" value="2" disabled></div>
+                    <div class="board-cell"><input type="text" class="board-cell-input" id="0,4" value="6" disabled></div>
+                    <div class="board-cell"><input type="text" class="board-cell-input" id="0,5"></div>
+                </div>
+                <div class="board-box-row">
+                    <div class="board-cell"><input type="text" class="board-cell-input" id="1,3"></div>
+                    <div class="board-cell"><input type="text" class="board-cell-input" id="1,4" value="7" disabled></div>
+                    <div class="board-cell"><input type="text" class="board-cell-input" id="1,5"></div>
+                </div>
+                <div class="board-box-row">
+                    <div class="board-cell"><input type="text" class="board-cell-input" id="2,3"></div>
+                    <div class="board-cell"><input type="text" class="board-cell-input" id="2,4"></div>
+                    <div class="board-cell"><input type="text" class="board-cell-input" id="2,5" value="4" disabled></div>
+                </div>
+            </div>
+            <div class="board-box">
+                <div class="board-box-row">
+                    <div class="board-cell"><input type="text" class="board-cell-input" id="0,6" value="7" disabled></div>
+                    <div class="board-cell"><input type="text" class="board-cell-input" id="0,7"></div>
+                    <div class="board-cell"><input type="text" class="board-cell-input" id="0,8" value="1" disabled></div>
+                </div>
+                <div class="board-box-row">
+                    <div class="board-cell"><input type="text" class="board-cell-input" id="1,6"></div>
+                    <div class="board-cell"><input type="text" class="board-cell-input" id="1,7" value="9" disabled></div>
+                    <div class="board-cell"><input type="text" class="board-cell-input" id="1,8"></div>
+                </div>
+                <div class="board-box-row">
+                    <div class="board-cell"><input type="text" class="board-cell-input" id="2,6" value="5" disabled></div>
+                    <div class="board-cell"><input type="text" class="board-cell-input" id="2,7"></div>
+                    <div class="board-cell"><input type="text" class="board-cell-input" id="2,8"></div>
+                </div>
+            </div>
+        </div>
+        <!--row 2-->
+        <div class="board-row">
+            <div class="board-box">
+                <div class="board-box-row">
+                    <div class="board-cell"><input type="text" class="board-cell-input" id="3,0" value="8" disabled></div>
+                    <div class="board-cell"><input type="text" class="board-cell-input" id="3,1" value="2" disabled></div>
+                    <div class="board-cell"><input type="text" class="board-cell-input" id="3,2"></div>
+                </div>
+                <div class="board-box-row">
+                    <div class="board-cell"><input type="text" class="board-cell-input" id="4,0"></div>
+                    <div class="board-cell"><input type="text" class="board-cell-input" id="4,1"></div>
+                    <div class="board-cell"><input type="text" class="board-cell-input" id="4,2" value="4" disabled></div>
+                </div>
+                <div class="board-box-row">
+                    <div class="board-cell"><input type="text" class="board-cell-input" id="5,0"></div>
+                    <div class="board-cell"><input type="text" class="board-cell-input" id="5,1" value="5" disabled></div>
+                    <div class="board-cell"><input type="text" class="board-cell-input" id="5,2"></div>
+                </div>
+            </div>
+            <div class="board-box">
+                <div class="board-box-row">
+                    <div class="board-cell"><input type="text" class="board-cell-input" id="3,3" value="1" disabled></div>
+                    <div class="board-cell"><input type="text" class="board-cell-input" id="3,4"></div>
+                    <div class="board-cell"><input type="text" class="board-cell-input" id="3,5"></div>
+                </div>
+                <div class="board-box-row">
+                    <div class="board-cell"><input type="text" class="board-cell-input" id="4,3" value="6" disabled></div>
+                    <div class="board-cell"><input type="text" class="board-cell-input" id="4,4"></div>
+                    <div class="board-cell"><input type="text" class="board-cell-input" id="4,5" value="2" disabled></div>
+                </div>
+                <div class="board-box-row">
+                    <div class="board-cell"><input type="text" class="board-cell-input" id="5,3"></div>
+                    <div class="board-cell"><input type="text" class="board-cell-input" id="5,4"></div>
+                    <div class="board-cell"><input type="text" class="board-cell-input" id="5,5" value="3" disabled></div>
+                </div>
+            </div>
+            <div class="board-box">
+                <div class="board-box-row">
+                    <div class="board-cell"><input type="text" class="board-cell-input" id="3,6"></div>
+                    <div class="board-cell"><input type="text" class="board-cell-input" id="3,7" value="4" disabled></div>
+                    <div class="board-cell"><input type="text" class="board-cell-input" id="3,8"></div>
+                </div>
+                <div class="board-box-row">
+                    <div class="board-cell"><input type="text" class="board-cell-input" id="4,6" value="9" disabled></div>
+                    <div class="board-cell"><input type="text" class="board-cell-input" id="4,7"></div>
+                    <div class="board-cell"><input type="text" class="board-cell-input" id="4,8"></div>
+                </div>
+                <div class="board-box-row">
+                    <div class="board-cell"><input type="text" class="board-cell-input" id="5,6"></div>
+                    <div class="board-cell"><input type="text" class="board-cell-input" id="5,7" value="2" disabled></div>
+                    <div class="board-cell"><input type="text" class="board-cell-input" id="5,8" value="8" disabled></div>
+                </div>
+            </div>
+        </div>
+        <!--row 3-->
+        <div class="board-row">
+            <div class="board-box">
+                <div class="board-box-row">
+                    <div class="board-cell"><input type="text" class="board-cell-input" id="6,0"></div>
+                    <div class="board-cell"><input type="text" class="board-cell-input" id="6,1"></div>
+                    <div class="board-cell"><input type="text" class="board-cell-input" id="6,2" value="9" disabled></div>
+                </div>
+                <div class="board-box-row">
+                    <div class="board-cell"><input type="text" class="board-cell-input" id="7,0"></div>
+                    <div class="board-cell"><input type="text" class="board-cell-input" id="7,1" value="4" disabled></div>
+                    <div class="board-cell"><input type="text" class="board-cell-input" id="7,2"></div>
+                </div>
+                <div class="board-box-row">
+                    <div class="board-cell"><input type="text" class="board-cell-input" id="8,0" value="7" disabled></div>
+                    <div class="board-cell"><input type="text" class="board-cell-input" id="8,1"></div>
+                    <div class="board-cell"><input type="text" class="board-cell-input" id="8,2" value="3" disabled></div>
+                </div>
+            </div>
+            <div class="board-box">
+                <div class="board-box-row">
+                    <div class="board-cell"><input type="text" class="board-cell-input" id="6,3" value="3" disabled></div>
+                    <div class="board-cell"><input type="text" class="board-cell-input" id="6,4"></div>
+                    <div class="board-cell"><input type="text" class="board-cell-input" id="6,5"></div>
+                </div>
+                <div class="board-box-row">
+                    <div class="board-cell"><input type="text" class="board-cell-input" id="7,3"></div>
+                    <div class="board-cell"><input type="text" class="board-cell-input" id="7,4" value="5" disabled></div>
+                    <div class="board-cell"><input type="text" class="board-cell-input" id="7,5"></div>
+                </div>
+                <div class="board-box-row">
+                    <div class="board-cell"><input type="text" class="board-cell-input" id="8,3"></div>
+                    <div class="board-cell"><input type="text" class="board-cell-input" id="8,4" value="1" disabled></div>
+                    <div class="board-cell"><input type="text" class="board-cell-input" id="8,5" value="8" disabled></div>
+                </div>
+            </div>
+            <div class="board-box">
+                <div class="board-box-row">
+                    <div class="board-cell"><input type="text" class="board-cell-input" id="6,6"></div>
+                    <div class="board-cell"><input type="text" class="board-cell-input" id="6,7" value="7" disabled></div>
+                    <div class="board-cell"><input type="text" class="board-cell-input" id="6,8" value="4" disabled></div>
+                </div>
+                <div class="board-box-row">
+                    <div class="board-cell"><input type="text" class="board-cell-input" id="7,6"></div>
+                    <div class="board-cell"><input type="text" class="board-cell-input" id="7,7" value="3" disabled></div>
+                    <div class="board-cell"><input type="text" class="board-cell-input" id="7,8" value="6" disabled></div>
+                </div>
+                <div class="board-box-row">
+                    <div class="board-cell"><input type="text" class="board-cell-input" id="8,6"></div>
+                    <div class="board-cell"><input type="text" class="board-cell-input" id="8,7"></div>
+                    <div class="board-cell"><input type="text" class="board-cell-input" id="8,8"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
