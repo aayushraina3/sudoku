@@ -45,7 +45,13 @@ function solve(){
     createPlayerBoard();
 
     setTimeout(function(){
-        if(JSON.stringify(playerBoard) == JSON.stringify(gameBoard)) console.log('correct');
+        if(JSON.stringify(playerBoard) == JSON.stringify(gameBoard)){
+            console.log('correct');
+            alert('correct');
+        }else{
+            console.log('incorrect');
+            alert('incorrect');
+        }
     },500)
 }
 
