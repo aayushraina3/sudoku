@@ -142,5 +142,23 @@ body{
 .boards{
     width: 100%;
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.board-thumbnail{
+    height: 200px;
+    width: 200px;
+    background-color: rgb(154, 177, 199);
+}
+
+.board-thumbnail-img{
+    width: 100%;
+    border: 1px solid black;
+}
+
+.board-thumbnail-a{
+    text-decoration: none;
+    background-color: #fff;
+    padding: 12px;
 }
