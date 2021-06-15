@@ -107,3 +107,45 @@ function solveBoard(){
     }
     return true;
 }
+
+let stopTime = true;
+let timer = document.getElementById('timeSpent');
+
+function startWatch(){
+    // hide the overlay
+    document.querySelector('.overlay-wrapper').style.display = 'none';
+
+    if(stopTime === true){
+        stopTime = false;
+        increaseTimer();
+    }
+}
+
+function increaseTimer(){
+    if(stopTime === false){
+        let time = timer.innerHTML;
+        let arr = time.split(':');
+
+        let sec = (+ arr[1]);
+        let min = (+ arr[0]);
+
+        if(sec < 60){
+            sec += 1;
+        }else{
+            if(min < 60){
+                min += 1;
+            }
+        }
+        
+        timer.innerHTML = `${(min/10 < 1) ? '0' + min : min}:${(sec/10 < 1) ? '0' + sec : sec}`;
+
+        // recursive call at interval of 1s
+        setTimeout("increaseTimer()", 1000);
+    }
+}
+
+function stopWatch(){
+    if(stopTime === false){
+        stopTime = true;
+    }
+}

@@ -8,26 +8,31 @@
     <title>Sudoku</title>
 </head>
 <body>
+<div class="overlay-wrapper">
+    <button class="start-btn" onclick="startWatch()">Start Game</button>
+</div>
 <div class="wrapper">
-    <div class="heading">Sudoku</div>
+    <div class="timer">
+        Time: <span id="timeSpent">00:00</span>
+    </div>
     <div class="sudoku-board">
         <!--row 1-->
         <div class="board-row">
             <div class="board-box">
                 <div class="board-box-row">
                     <div class="board-cell"><input type="text" class="board-cell-input" id="0,0" value="1" disabled></div>
-                    <div class="board-cell"><input type="text" class="board-cell-input" id="0,1"></div>
-                    <div class="board-cell"><input type="text" class="board-cell-input" id="0,2"></div>
+                    <div class="board-cell"><input type="text" class="board-cell-input" id="0,1" maxlength="1"></div>
+                    <div class="board-cell"><input type="text" class="board-cell-input" id="0,2" maxlength="1"></div>
                 </div>
                 <div class="board-box-row">
                     <div class="board-cell"><input type="text" class="board-cell-input" id="1,0" value="7" disabled></div>
                     <div class="board-cell"><input type="text" class="board-cell-input" id="1,1" value="3" disabled></div>
-                    <div class="board-cell"><input type="text" class="board-cell-input" id="1,2"></div>
+                    <div class="board-cell"><input type="text" class="board-cell-input" id="1,2" maxlength="1"></div>
                 </div>
                 <div class="board-box-row">
-                    <div class="board-cell"><input type="text" class="board-cell-input" id="2,0"></div>
-                    <div class="board-cell"><input type="text" class="board-cell-input" id="2,1"></div>
-                    <div class="board-cell"><input type="text" class="board-cell-input" id="2,2"></div>
+                    <div class="board-cell"><input type="text" class="board-cell-input" id="2,0" maxlength="1"></div>
+                    <div class="board-cell"><input type="text" class="board-cell-input" id="2,1" maxlength="1"></div>
+                    <div class="board-cell"><input type="text" class="board-cell-input" id="2,2" maxlength="1"></div>
                 </div>
             </div>
             <div class="board-box">
@@ -37,26 +42,26 @@
                     <div class="board-cell"><input type="text" class="board-cell-input" id="0,5" value="9" disabled></div>
                 </div>
                 <div class="board-box-row">
-                    <div class="board-cell"><input type="text" class="board-cell-input" id="1,3"></div>
-                    <div class="board-cell"><input type="text" class="board-cell-input" id="1,4"></div>
-                    <div class="board-cell"><input type="text" class="board-cell-input" id="1,5"></div>
+                    <div class="board-cell"><input type="text" class="board-cell-input" id="1,3" maxlength="1"></div>
+                    <div class="board-cell"><input type="text" class="board-cell-input" id="1,4" maxlength="1"></div>
+                    <div class="board-cell"><input type="text" class="board-cell-input" id="1,5" maxlength="1"></div>
                 </div>
                 <div class="board-box-row">
-                    <div class="board-cell"><input type="text" class="board-cell-input" id="2,3"></div>
-                    <div class="board-cell"><input type="text" class="board-cell-input" id="2,4"></div>
+                    <div class="board-cell"><input type="text" class="board-cell-input" id="2,3" maxlength="1"></div>
+                    <div class="board-cell"><input type="text" class="board-cell-input" id="2,4" maxlength="1"></div>
                     <div class="board-cell"><input type="text" class="board-cell-input" id="2,5" value="1" disabled></div>
                 </div>
             </div>
             <div class="board-box">
                 <div class="board-box-row">
-                    <div class="board-cell"><input type="text" class="board-cell-input" id="0,6"></div>
-                    <div class="board-cell"><input type="text" class="board-cell-input" id="0,7"></div>
+                    <div class="board-cell"><input type="text" class="board-cell-input" id="0,6" maxlength="1"></div>
+                    <div class="board-cell"><input type="text" class="board-cell-input" id="0,7" maxlength="1"></div>
                     <div class="board-cell"><input type="text" class="board-cell-input" id="0,8" value="6" disabled></div>
                 </div>
                 <div class="board-box-row">
-                    <div class="board-cell"><input type="text" class="board-cell-input" id="1,6"></div>
+                    <div class="board-cell"><input type="text" class="board-cell-input" id="1,6" maxlength="1"></div>
                     <div class="board-cell"><input type="text" class="board-cell-input" id="1,7" value="4" disabled></div>
-                    <div class="board-cell"><input type="text" class="board-cell-input" id="1,8"></div>
+                    <div class="board-cell"><input type="text" class="board-cell-input" id="1,8" maxlength="1"></div>
                 </div>
                 <div class="board-box-row">
                     <div class="board-cell"><input type="text" class="board-cell-input" id="2,6" value="2" disabled></div>
@@ -69,18 +74,18 @@
         <div class="board-row">
             <div class="board-box">
                 <div class="board-box-row">
-                    <div class="board-cell"><input type="text" class="board-cell-input" id="3,0"></div>
-                    <div class="board-cell"><input type="text" class="board-cell-input" id="3,1"></div>
+                    <div class="board-cell"><input type="text" class="board-cell-input" id="3,0" maxlength="1"></div>
+                    <div class="board-cell"><input type="text" class="board-cell-input" id="3,1" maxlength="1"></div>
                     <div class="board-cell"><input type="text" class="board-cell-input" id="3,2" value="7" disabled></div>
                 </div>
                 <div class="board-box-row">
                     <div class="board-cell"><input type="text" class="board-cell-input" id="4,0" value="5" disabled></div>
-                    <div class="board-cell"><input type="text" class="board-cell-input" id="4,1"></div>
-                    <div class="board-cell"><input type="text" class="board-cell-input" id="4,2"></div>
+                    <div class="board-cell"><input type="text" class="board-cell-input" id="4,1" maxlength="1"></div>
+                    <div class="board-cell"><input type="text" class="board-cell-input" id="4,2" maxlength="1"></div>
                 </div>
                 <div class="board-box-row">
-                    <div class="board-cell"><input type="text" class="board-cell-input" id="5,0"></div>
-                    <div class="board-cell"><input type="text" class="board-cell-input" id="5,1"></div>
+                    <div class="board-cell"><input type="text" class="board-cell-input" id="5,0" maxlength="1"></div>
+                    <div class="board-cell"><input type="text" class="board-cell-input" id="5,1" maxlength="1"></div>
                     <div class="board-cell"><input type="text" class="board-cell-input" id="5,2" value="6" disabled></div>
                 </div>
             </div>
@@ -88,15 +93,15 @@
                 <div class="board-box-row">
                     <div class="board-cell"><input type="text" class="board-cell-input" id="3,3" value="1" disabled></div>
                     <div class="board-cell"><input type="text" class="board-cell-input" id="3,4" value="2" disabled></div>
-                    <div class="board-cell"><input type="text" class="board-cell-input" id="3,5"></div>
+                    <div class="board-cell"><input type="text" class="board-cell-input" id="3,5" maxlength="1"></div>
                 </div>
                 <div class="board-box-row">
                     <div class="board-cell"><input type="text" class="board-cell-input" id="4,3" value="7" disabled></div>
-                    <div class="board-cell"><input type="text" class="board-cell-input" id="4,4"></div>
+                    <div class="board-cell"><input type="text" class="board-cell-input" id="4,4" maxlength="1"></div>
                     <div class="board-cell"><input type="text" class="board-cell-input" id="4,5" value="3" disabled></div>
                 </div>
                 <div class="board-box-row">
-                    <div class="board-cell"><input type="text" class="board-cell-input" id="5,3"></div>
+                    <div class="board-cell"><input type="text" class="board-cell-input" id="5,3" maxlength="1"></div>
                     <div class="board-cell"><input type="text" class="board-cell-input" id="5,4" value="9" disabled></div>
                     <div class="board-cell"><input type="text" class="board-cell-input" id="5,5" value="5" disabled></div>
                 </div>
@@ -104,18 +109,18 @@
             <div class="board-box">
                 <div class="board-box-row">
                     <div class="board-cell"><input type="text" class="board-cell-input" id="3,6" value="6" disabled></div>
-                    <div class="board-cell"><input type="text" class="board-cell-input" id="3,7"></div>
-                    <div class="board-cell"><input type="text" class="board-cell-input" id="3,8"></div>
+                    <div class="board-cell"><input type="text" class="board-cell-input" id="3,7" maxlength="1"></div>
+                    <div class="board-cell"><input type="text" class="board-cell-input" id="3,8" maxlength="1"></div>
                 </div>
                 <div class="board-box-row">
-                    <div class="board-cell"><input type="text" class="board-cell-input" id="4,6"></div>
-                    <div class="board-cell"><input type="text" class="board-cell-input" id="4,7"></div>
+                    <div class="board-cell"><input type="text" class="board-cell-input" id="4,6" maxlength="1"></div>
+                    <div class="board-cell"><input type="text" class="board-cell-input" id="4,7" maxlength="1"></div>
                     <div class="board-cell"><input type="text" class="board-cell-input" id="4,8" value="8" disabled></div>
                 </div>
                 <div class="board-box-row">
                     <div class="board-cell"><input type="text" class="board-cell-input" id="5,6" value="7" disabled></div>
-                    <div class="board-cell"><input type="text" class="board-cell-input" id="5,7"></div>
-                    <div class="board-cell"><input type="text" class="board-cell-input" id="5,8"></div>
+                    <div class="board-cell"><input type="text" class="board-cell-input" id="5,7" maxlength="1"></div>
+                    <div class="board-cell"><input type="text" class="board-cell-input" id="5,8" maxlength="1"></div>
                 </div>
             </div>
         </div>
@@ -128,26 +133,26 @@
                     <div class="board-cell"><input type="text" class="board-cell-input" id="6,2" value="4" disabled></div>
                 </div>
                 <div class="board-box-row">
-                    <div class="board-cell"><input type="text" class="board-cell-input" id="7,0"></div>
+                    <div class="board-cell"><input type="text" class="board-cell-input" id="7,0" maxlength="1"></div>
                     <div class="board-cell"><input type="text" class="board-cell-input" id="7,1" value="2" disabled></div>
-                    <div class="board-cell"><input type="text" class="board-cell-input" id="7,2"></div>
+                    <div class="board-cell"><input type="text" class="board-cell-input" id="7,2" maxlength="1"></div>
                 </div>
                 <div class="board-box-row">
                     <div class="board-cell"><input type="text" class="board-cell-input" id="8,0" value="8" disabled></div>
-                    <div class="board-cell"><input type="text" class="board-cell-input" id="8,1"></div>
-                    <div class="board-cell"><input type="text" class="board-cell-input" id="8,2"></div>
+                    <div class="board-cell"><input type="text" class="board-cell-input" id="8,1" maxlength="1"></div>
+                    <div class="board-cell"><input type="text" class="board-cell-input" id="8,2" maxlength="1"></div>
                 </div>
             </div>
             <div class="board-box">
                 <div class="board-box-row">
                     <div class="board-cell"><input type="text" class="board-cell-input" id="6,3" value="6" disabled></div>
-                    <div class="board-cell"><input type="text" class="board-cell-input" id="6,4"></div>
-                    <div class="board-cell"><input type="text" class="board-cell-input" id="6,5"></div>
+                    <div class="board-cell"><input type="text" class="board-cell-input" id="6,4" maxlength="1"></div>
+                    <div class="board-cell"><input type="text" class="board-cell-input" id="6,5" maxlength="1"></div>
                 </div>
                 <div class="board-box-row">
-                    <div class="board-cell"><input type="text" class="board-cell-input" id="7,3"></div>
-                    <div class="board-cell"><input type="text" class="board-cell-input" id="7,4"></div>
-                    <div class="board-cell"><input type="text" class="board-cell-input" id="7,5"></div>
+                    <div class="board-cell"><input type="text" class="board-cell-input" id="7,3" maxlength="1"></div>
+                    <div class="board-cell"><input type="text" class="board-cell-input" id="7,4" maxlength="1"></div>
+                    <div class="board-cell"><input type="text" class="board-cell-input" id="7,5" maxlength="1"></div>
                 </div>
                 <div class="board-box-row">
                     <div class="board-cell"><input type="text" class="board-cell-input" id="8,3" value="5" disabled></div>
@@ -157,25 +162,25 @@
             </div>
             <div class="board-box">
                 <div class="board-box-row">
-                    <div class="board-cell"><input type="text" class="board-cell-input" id="6,6"></div>
-                    <div class="board-cell"><input type="text" class="board-cell-input" id="6,7"></div>
-                    <div class="board-cell"><input type="text" class="board-cell-input" id="6,8"></div>
+                    <div class="board-cell"><input type="text" class="board-cell-input" id="6,6" maxlength="1"></div>
+                    <div class="board-cell"><input type="text" class="board-cell-input" id="6,7" maxlength="1"></div>
+                    <div class="board-cell"><input type="text" class="board-cell-input" id="6,8" maxlength="1"></div>
                 </div>
                 <div class="board-box-row">
-                    <div class="board-cell"><input type="text" class="board-cell-input" id="7,6"></div>
+                    <div class="board-cell"><input type="text" class="board-cell-input" id="7,6" maxlength="1"></div>
                     <div class="board-cell"><input type="text" class="board-cell-input" id="7,7" value="3" disabled></div>
                     <div class="board-cell"><input type="text" class="board-cell-input" id="7,8" value="7" disabled></div>
                 </div>
                 <div class="board-box-row">
-                    <div class="board-cell"><input type="text" class="board-cell-input" id="8,6"></div>
-                    <div class="board-cell"><input type="text" class="board-cell-input" id="8,7"></div>
+                    <div class="board-cell"><input type="text" class="board-cell-input" id="8,6" maxlength="1"></div>
+                    <div class="board-cell"><input type="text" class="board-cell-input" id="8,7" maxlength="1"></div>
                     <div class="board-cell"><input type="text" class="board-cell-input" id="8,8" value="4" disabled></div>
                 </div>
             </div>
         </div>
     </div>
     <div class="btn-div">
-        <button class="check-btn" onclick="solve()">Check</button>
+        <button class="check-btn" onclick="solve(); stopWatch()">Check</button>
     </div>
 </div>
 <script src="../js/script.js"></script>

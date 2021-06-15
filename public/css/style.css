@@ -9,7 +9,7 @@ html, body{
 
 body{
     /* background-image: url(./images/bg.jpg); */
-    background-color:brown;
+    background-color:rgb(154, 177, 199);
 }
 
 .heading{
@@ -17,6 +17,19 @@ body{
     font-size: 72px;
     font-weight: bold;
     margin-bottom: 30px;
+}
+
+.timer{
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    width: 450px;
+    text-align: end;
+    margin-bottom: 10px;
+}
+
+#timeSpent{
+    font-size: 26px;
 }
 
 .wrapper{
@@ -51,7 +64,7 @@ body{
 .board-cell{
     width: 50px;
     height: 50px;
-    border: 1px solid white;
+    border: 1px solid black;
 }
 
 .board-cell-input{
@@ -59,7 +72,7 @@ body{
     height: 100%;
     border: none;
     text-align: center;
-    background-color: rgb(245, 245, 220);
+    background-color: rgb(235, 244, 253);
 }
 
 .board-cell-input:disabled{
@@ -80,6 +93,7 @@ body{
     font-weight: bold;
     font-size: 18px;
     background-color: aliceblue;
+    border: none;
 }
 
 .check-btn:hover{
@@ -90,7 +104,10 @@ body{
     .board-cell{
         width: 36px;
         height: 36px;
-        border: 1px solid white;
+    }
+
+    .timer{
+        width: 324px;
     }
 }
 
@@ -98,11 +115,32 @@ body{
     .board-cell{
         width: 30px;
         height: 30px;
-        border: 1px solid white;
+    }
+    
+    .timer{
+        width: 270px;
     }
 }
 
+.overlay-wrapper{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0, 0.6);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.start-btn{
+    width: 110px;
+    height: 50px;
+    font-weight: bold;
+}
 
 .boards{
+    width: 100%;
     display: flex;
+    justify-content: center;
 }
