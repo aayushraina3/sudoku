@@ -14,9 +14,12 @@ body{
 
 .heading{
     color: white;
-    font-size: 72px;
+    font-size: 86px;
     font-weight: bold;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
+    text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+                 0px 8px 13px rgba(0,0,0,0.1),
+                 0px 18px 23px rgba(0,0,0,0.1);
 }
 
 .timer{
@@ -94,10 +97,11 @@ body{
     font-size: 18px;
     background-color: aliceblue;
     border: none;
+    border-radius: 5px;
 }
 
 .check-btn:hover{
-    background-color: slategray;
+    background-color: #6389ad;
 }
 
 @media screen and (max-width: 480px){
@@ -137,6 +141,11 @@ body{
     width: 110px;
     height: 50px;
     font-weight: bold;
+    border-radius: 5px;
+}
+
+.start-btn:hover{
+    background-color: #6389ad;
 }
 
 .boards{
@@ -154,11 +163,25 @@ body{
 
 .board-thumbnail-img{
     width: 100%;
-    border: 1px solid black;
+    /* border: 2px solid #c7aa9a; */
+    border-radius: 5px;
 }
 
 .board-thumbnail-a{
     text-decoration: none;
     background-color: #fff;
     padding: 12px;
+    border-radius: 5px;
+}
+
+.board-thumbnail-a:hover{
+    box-shadow: 0 0 5px #000000;
+}
+
+.shadow6 {
+    box-shadow: 5px 5px rgba(88, 88, 88, 0.4),
+                10px 10px rgba(86, 87, 87, 0.3),
+                15px 15px rgba(66, 68, 68, 0.2),
+                20px 20px rgba(51, 53, 53, 0.1),
+                25px 25px rgba(86, 87, 87, 0.05);
 }
